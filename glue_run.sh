@@ -1,0 +1,1 @@
+sh /home/glue_user/spark/bin/spark-submit /home/glue_user/workspace/jupyter_workspace/{your glue script here} --JOB_NAME={} --glue-job-name={} --glue-job-id={} --glue-job-configuration-id={} --glue-job-table={} --glue-job-config-table={} --glue-job-configuration-name={} --region={}
