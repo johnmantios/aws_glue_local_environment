@@ -48,6 +48,22 @@ class CustomGlueClass(object):
     self.region = region
     self.glueJobDetails = glueJobDetails
     
+    
+  def getGlueJobDetails(self):
+    
+    response = self.GlueJobTable.query(
+        KeyConditionExpression=Key('GlueJobId').eq(str(self.glueJobId))
+    )
+    
+    self.glueJobDetails = response['Items']
+    
+  def getGlueJobConfigurationDetails(self):
+    
+    response = self.GlueJobConfigTable.query(
+        KeyConditionExpression=Key('GlueJobConfigurationId').eq(str(self.glueJobConfigId))
+    )
+    
+    self.glueJobDetails = response['Items']
    
 class SparkSession(object):
   
