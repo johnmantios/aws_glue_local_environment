@@ -37,7 +37,7 @@ def getGlueParameters():
   return glueParameters
 
 def getGlueConfigDetails(spark, glueParameters):
-  myCustomGlue = CustomGlue(
+  myCustomGlue = CustomGlueClass(
       spark,
       glueParameters['glue-job-id'],
       glueParameters['glue-job-configuration-id'],
