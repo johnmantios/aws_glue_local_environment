@@ -25,7 +25,7 @@ def getGlueParameters():
     sys.argv,
     [
         'glue-job-name',
-        'glue-job-id,
+        'glue-job-id',
         'glue-job-configuration-id',
         'glue-job-table',
         'glue-job-config-table',
