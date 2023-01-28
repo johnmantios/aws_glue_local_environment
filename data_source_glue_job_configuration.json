@@ -1,0 +1,44 @@
+{
+  "GlueJobConfiguration-{{env}}":[
+    {
+      "PutRequest": {
+        "Item": {
+          "GlueJobConfigurationId": {
+            "S": "1"
+            
+          },
+          "GlueJobConfigurationName": {
+            "S": "data-source-ingestion-{{env}}"
+          },
+          "ModifiedBy":{
+            "S": "someone"
+          },
+          "LastExtractionTimestamp":{
+            "S": "some timestamp"
+          },
+          "CreatedBy":{
+            "S": "someone"
+          },
+          "GlueCustom": {
+            "M": {
+              "aSecret": {
+                "S": "dev/my_app/stage_user/snowflake"
+              },
+              "anotherSecret": {
+                "S": "another_secret_path_to_use_with_either_secrets_manager_or_as_a_table_name"
+              }
+            }
+          },
+          "GlueJobId": {
+            "S": "1"
+          },
+          "Created": {
+            "S": "somewhen"
+          }
+        }
+      }
+    }
+  ]
+}
+                  
+    
