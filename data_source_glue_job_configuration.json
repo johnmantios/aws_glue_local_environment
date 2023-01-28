@@ -1,0 +1,10 @@
+{
+  "GlueJobId": "1",
+  "GlueJobName": "my_glue_job_name",
+  "Created": "somewhen",
+  "CreatedBy": "someone",
+  "Modified": "somewhen",
+  "ModifiedBy": "someone",
+  "Status": "ACTIVE",
+  "StopOnException": "Y"
+}
